@@ -1,4 +1,4 @@
-const listaPokemon = document.querySelector("#listPokemon");
+const listaPokemon = document.querySelector("#listaPokemon");
 const botonesHeader = document.querySelectorAll(".btn-header");
 let URL = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -30,12 +30,11 @@ function mostrarPokemon(poke) {
         </div>
         <div class="pokemon-info">
             <div class="nombre-conntenedor">
-                <p class="pokemon-id">#${poke.id}</p>
+                <p class="pokemon-id">#${pokeId}</p>
                 <h2 class="pokemon-nombre">${poke.name}</h2>
             </div>
             <div class="pokemon-tipos">
-                <p class="electric tipo">ELECTRIC</p>
-                <P class="fighting tipo">FIGHTING</P>
+                ${tipos}
             </div>
             <div class="pokemon-stats">
                 <p class="stat">${poke.height}</p>
